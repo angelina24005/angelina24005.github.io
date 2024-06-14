@@ -16,9 +16,47 @@
                     <i class="fa-solid fa-mug-hot"></i>
                     <h1 class="logo"><a href="/">Harvest Coffee</a></h1>
                 </div>
+                <div class="modal-backdrop"></div>
                 <div class="container-user">
-                    <i class="fa-solid fa-user"></i>
-                    <div class="shopping-cart-container">
+        <i class="fa-solid fa-user" id="user-icon"></i>
+    </div>
+    <!-- El Modal -->
+    <div id="myModal" class="modal">
+        <!-- Contenido del Modal -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="contenedor">
+                <div class="contenido">
+                    <div class="contenido-form">
+                    <form method="post" action="procesar_registro.php">  
+                         <h2>Registrarse</h2>
+                            <div class="social-networks">
+                                <ion-icon name="logo-twitch"></ion-icon>
+                                <ion-icon name="logo-twitter"></ion-icon>
+                                <ion-icon name="logo-instagram"></ion-icon>
+                                <ion-icon name="logo-tiktok"></ion-icon>
+                            </div>
+                            <span>Use su correo electrónico para registrarse</span>
+                            <div class="contenido-input">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="contenido-input">
+                            <label for="email">Correo:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="contenido-input">
+                            <label for="password">Contraseña:</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                            <button class="button" type="submit">REGISTRARSE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                 <div class="shopping-cart-container">
                         <i class="fa-solid fa-basket-shopping"></i>
                         <div class="content-shopping-cart">
                             <span class="text">Carrito</span>
@@ -62,3 +100,4 @@
             </nav>
         </div>
     </header>
+    <script src="scripts.js"></script>
